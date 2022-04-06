@@ -4,12 +4,11 @@
  */
 function calculate () {
   // input
-  const radius = parseInt(document.getElementById('radius').value)
-  const pi = Math.PI;
+  const fahrenheit = parseInt(document.getElementById('fahrenheit').value)
+
   // process
-  
-  const area = ( pi * radius  ) *  radius
+  const celsius = (fahrenheit - 32) * 5 / 9
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area.toFixed(2) + ' cm²'
+  document.getElementById('celsius').innerHTML = 'Celsius is: ' + celsius.toFixed(2) + '°'
 }
